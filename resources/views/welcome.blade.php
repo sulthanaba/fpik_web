@@ -219,39 +219,6 @@
 
                                     @endforeach
 
-                                    @foreach($info as $i)
-
-                                        <li>
-                                            <a href="{{$i->link_info}}">{{$i->title_info}}</a> <!Judul dan link info>
-                                            <div class="entry-meta">
-                                                <span class="meta-date">{{$i->created_at}}</span> <!Tanggal Info>
-                                            </div>
-                                        </li>
-
-                                    @endforeach
-
-                                    @foreach($info as $i)
-
-                                        <li>
-                                            <a href="{{$i->link_info}}">{{$i->title_info}}</a> <!Judul dan link info>
-                                            <div class="entry-meta">
-                                                <span class="meta-date">{{$i->created_at}}</span> <!Tanggal Info>
-                                            </div>
-                                        </li>
-
-                                    @endforeach
-
-                                    @foreach($info as $i)
-
-                                        <li>
-                                            <a href="{{$i->link_info}}">{{$i->title_info}}</a> <!Judul dan link info>
-                                            <div class="entry-meta">
-                                                <span class="meta-date">{{$i->created_at}}</span> <!Tanggal Info>
-                                            </div>
-                                        </li>
-
-                                    @endforeach
-
                                 </ul>
                             </div>
                         </div>
