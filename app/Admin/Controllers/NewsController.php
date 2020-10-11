@@ -71,11 +71,10 @@ class NewsController extends AdminController
     {
         $form = new Form(new NewsModel);
 
-        $form->text('title',('Judul'));
-        $form->image('image',('Gambar'));
-        $form->textarea('description',('Deskripsi'));
-        $form->display('created_at', __('Created At'));
-        $form->display('updated_at', __('Updated At'));
+        $form->text('title','Judul');
+        $form->image('image','Gambar');
+        $form->textarea('description','Deskripsi');
+        $form->text('source','Sumber');
 
         return $form;
     }

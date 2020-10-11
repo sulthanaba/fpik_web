@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MainController@home');
 
 Route::get('/daftar-prestasi-mahasiswa', 'MainController@achievement');
 
@@ -59,29 +57,19 @@ Route::get('/daftar-kegiatan-mahasiswa', function () {
 //     return view('prestasiMahasiswa');
 // });
 
-Route::get('/agenda', function () {
-    return view('agenda');
-});
+Route::get('/agenda', 'MainController@agenda');
 
-Route::get('/berita', function () {
-    return view('berita');
-});
+Route::get('/berita', 'MainController@berita');
 
-Route::get('/berita-lengkap', function () {
-    return view('beritaLengkap');
-});
+Route::get('/berita-lengkap/{id}', 'MainController@beritaLengkap');
 
 Route::get('/statistik', function () {
     return view('statistik');
 });
 
-Route::get('/sdg14-fakultas', function () {
-    return view('sdgFakultas');
-});
+Route::get('/sdg14-fakultas', 'MainController@sdgFakultas');
 
-Route::get('/sdg14-lengkap', function () {
-    return view('sdgFakultasLengkap');
-});
+Route::get('/sdg14-lengkap/{id}', 'MainController@sdgFakultasLengkap');
 
 Route::get('/visi-misi', function () {
     return view('visiMisi');

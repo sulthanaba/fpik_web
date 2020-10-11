@@ -34,7 +34,8 @@ class AgendaController extends AdminController
         $grid->column('id','ID');
         $grid->column('title_agenda','Judul');
         $grid->column('desc_agenda','Deskripsi');
-        $grid->column('date_agenda','Tanggal');
+        $grid->column('date_agenda','Tanggal Mulai');
+        $grid->column('date_agenda_until','Tanggal Selesai');
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
         $grid->disableExport();
@@ -55,7 +56,8 @@ class AgendaController extends AdminController
 
         $show->field('title_agenda',('Judul'));
         $show->field('desc_agenda',('Deskripsi'));
-        $show->field('date_agenda',('Tanggal'));      
+        $show->field('date_agenda',('Tanggal Mulai'));
+        $show->field('date_agenda_until',('Tanggal Selesai'));      
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -73,7 +75,8 @@ class AgendaController extends AdminController
 
         $form->text('title_agenda',('Judul'));
         $form->textarea('Desc_agenda',('Deskripsi'));
-        $form->date('Date_agenda',('Tanggal'));
+        $form->date('date_agenda',('Tanggal Mulai'));
+        $form->date('date_agenda_until',('Tanggal Selesai'));
 
         return $form;
     }
