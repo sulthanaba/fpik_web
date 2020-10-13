@@ -332,7 +332,7 @@
                             </div>
                         </div>
                         <div class="text-center btn-box no-border " style="margin: 40px;">
-                            <a href="statistik.html" class="btn btn-more ">Data Lainnya</a>
+                            <a href="{{url('/statistik')}}" class="btn btn-more ">Data Lainnya</a>
                         </div>
                     </div>
                 </div>
