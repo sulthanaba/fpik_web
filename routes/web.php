@@ -74,3 +74,7 @@ Route::get('/sdg14-lengkap/{id}', 'MainController@sdgFakultasLengkap');
 Route::get('/visi-misi', function () {
     return view('visiMisi');
 });
+
+Route::get('/agrianita', 'MainController@agrianita');
+
+Route::get('/agrianita-lengkap/{id}', 'MainController@agrianitaLengkap');

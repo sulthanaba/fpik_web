@@ -53,7 +53,7 @@
                         <div class="post-content ">
                             <div class="post-title ">
                                 <span class="post-date ">{{$berita_terkini->created_at}} </span> <!tanggal post>
-                                <h3><a href="berita-1.html">{{$berita_terkini->title}} </a></h3> <!Judul Berita>
+                                <h3><a href="{{ url('/berita-lengkap/'.$berita_terkini->id) }}">{{$berita_terkini->title}} </a></h3> <!Judul Berita>
                             </div>
                             <div class="entry-content"> <!isi artikel>
                                 <p>{{$berita_terkini->description}}</p> 
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="post-content ">
                                     <div class="post-title ">
-                                        <h3><a href="berita-2.html ">{{$b2->title}}</a></h3>
+                                        <h3><a href="{{ url('/berita-lengkap/'.$b2->id) }}">{{$b2->title}}</a></h3>
                                     </div>
                                     <div class="entry-content ">
                                         <a class="btn btn-more " href="{{ url('/berita-lengkap/'.$b2->id) }}">Baca Selengkapnya</a>

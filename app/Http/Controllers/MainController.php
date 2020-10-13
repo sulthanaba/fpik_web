@@ -137,6 +137,54 @@ class MainController extends Controller
 
         return view('sdgFakultasLengkap', compact('sdg', 'sdg2'));
     }
+
+    public function agrianita(){
+        $agrianita = DB::table('agrianita')
+            ->get();
+
+        foreach($agrianita as $a){
+            $a->created_at = date('d M Y', strtotime($a->created_at));
+        }
+
+        $agrianita2 = DB::table('agrianita')
+            ->orderBy('id', 'DESC')
+            ->limit(2)
+            ->get();
+
+        foreach($agrianita2 as $a2){
+            $a2->created_at = date('d M Y', strtotime($a2->created_at));
+        }
+
+        return view('agrianita', compact('agrianita', 'agrianita2'));
+    }
+
+    public function agrianitaLengkap(Request $request){
+        $agrianita = DB::table('agrianita')
+            ->where('id', $request->id)
+            ->first();
+
+        $agrianita->created_at = date('l, d M Y H:i', strtotime($agrianita->created_at));
+
+        $agrianita2 = DB::table('agrianita')
+            ->whereNotIn('id', [$agrianita->id])
+            ->limit(2)
+            ->get();
+
+        foreach($agrianita2 as $a2){
+            $a2->created_at = date('d M Y', strtotime($a2->created_at));
+        }
+
+        // $agrianita3 = DB::table('agrianita')
+        //     ->whereNotIn('id', [$agrianita->id])
+        //     ->limit(2)
+        //     ->get();
+
+        // foreach($agrianita as $a3){
+        //     $a3->created_at = date('d F Y H:i', strtotime($a3->created_at));
+        // }
+
+        return view('agrianitaLengkap', compact('agrianita', 'agrianita2'));
+    }
     
     public function achievement() {
 

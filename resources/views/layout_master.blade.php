@@ -30,7 +30,7 @@
     <!-- HEADER -->
     <header id="header" class=" header-fancy">
         <div class="navbar-header">
-            <a href="{{ url('/') }}" class="navbar-brand fixed">
+            <a href="index.html" class="navbar-brand fixed">
                 <img src="{{ asset('frontend/photo/logo/logo_fpik_putih.png')}}" alt="Fakultas Perikanan" class="img-responsive">
                 <!-- <span>FPIK - IPB University</span> -->
             </a>
@@ -47,7 +47,7 @@
         <div class="container">
             <nav id="navbar" class="navbar navbar-collapse navbar-default navbar-right collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/') }}">HOME</a></li>
+                    <li><a href="{{ url('/')}}">HOME</a></li>
                     <li class=" nav-item dropdown mega-menu">
                         <a id="megamenu" data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">
                             <i class="fa fa-comment"></i> PROFIL
@@ -89,10 +89,10 @@
                                                     <h6 class="font-weight-bold">Fasilitas</h6>
                                                     <ul class="list-unstyled">
                                                         <li class="nav-item">
-                                                            <a href="ifmos-pelabuhanratu.html" class="nav-link">IFMOS Pelabuhanratu</a>
+                                                            <a href="{{ url('/ifmos-pelabuhanratu') }}" class="nav-link">IFMOS Pelabuhanratu</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a href="ifmos-ancol.html" class="nav-link">IFMOS Ancol</a>
+                                                            <a href="{{ url('/ifmos-ancol') }}" class="nav-link">IFMOS Ancol</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -242,10 +242,10 @@
                                                             <a href="{{ url('/pekan-kreativitas-mahasiswa') }}" class="nav-link ">Program Kreativitas Mahasiswa</a>
                                                         </li>
                                                         <li class="nav-item ">
-                                                            <a href="{{ url('/daftar-kegiatan-mahasiswa') }}" class="nav-link ">Daftar Kegiatan Mahasiswa</a>
+                                                            <a href="{{ url('/pekan-kreativitas-mahasiswa') }}" class="nav-link ">Daftar Kegiatan Mahasiswa</a>
                                                         </li>
                                                         <li class="nav-item ">
-                                                            <a href="{{ url('/daftar-prestasi-mahasiswa') }}" class="nav-link ">Daftar Prestasi Mahasiswa</a>
+                                                            <a href="{{ url('/pekan-kreativitas-mahasiswa') }}" class="nav-link ">Daftar Prestasi Mahasiswa</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -253,10 +253,16 @@
                                                     <h6 class="font-weight-bold ">Alumni</h6>
                                                     <ul class="list-unstyled ">
                                                         <li class="nav-item ">
-                                                            <a href="http://haipb.ipb.ac.id" class="nav-link ">Himpunan Alumni IPB</a>
+                                                            <a href="http://haipb.ipb.ac.id" 
+                                                            class="nav-link ">Himpunan Alumni IPB</a>
                                                         </li>
                                                         <li class="nav-item ">
-                                                            <a href="https://www.instagram.com/hafpikipb" class="nav-link ">Himpunan Alumni FPIK</a>
+                                                            <a href="https://www.instagram.com/hafpikipb" 
+                                                            class="nav-link ">Himpunan Alumni FPIK</a>
+                                                        </li>
+                                                        <li class="nav-item ">
+                                                            <a href="{{ url('/agrianita') }}" 
+                                                            class="nav-link ">Agrianita</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -313,7 +319,7 @@
                                                 <h6 class="font-weight-bold">FPIK IPB</h6>
                                                 <ul class="list-unstyled">
                                                     <li class="nav-item ">
-                                                        <a href="{{ url('/sdg14-fakultas') }}" class="nav-link ">Fakultas</a>
+                                                    <a href="{{ url('/sdg14-fakultas') }}" class="nav-link ">Fakultas</a>
                                                     </li>
                                                     <li class="nav-item ">
                                                         <a href="http://bdp.fpik.ipb.ac.id/?p=5598" class="nav-link ">Departemen Budidaya Perairan</a>

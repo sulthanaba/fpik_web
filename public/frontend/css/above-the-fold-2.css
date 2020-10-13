@@ -5802,10 +5802,10 @@ fieldset[disabled] .btn-more.focus {
     margin-top: 11px;
 }
 
-#header.header-fancy:not(.sticky-header) .navbar-brand.scrolling {
+/* #header.header-fancy:not(.sticky-header) .navbar-brand.scrolling {
     opacity: 0;
     visibility: hidden;
-}
+} */
 #header.header-fancy .navbar-brand.fixed {
     top: 0;
     padding: 0 10px 5px 50px;
@@ -5829,7 +5829,7 @@ fieldset[disabled] .btn-more.focus {
     margin-top: 11px;
 }
 
-#header.header-fancy:not(.sticky-header) .navbar-brand.scrolling {
+/* #header.header-fancy:not(.sticky-header) .navbar-brand.scrolling {
     opacity: 1;
     visibility: visible;
 }
@@ -5843,10 +5843,10 @@ fieldset[disabled] .btn-more.focus {
 
 #header.header-fancy.sticky-header .navbar-brand.noscroll>img {
     height: 0;
-}
+} */
 
 @media (min-width: 1200px) {
-    #header.header-fancy.sticky-header .topbar {
+    /* #header.header-fancy.sticky-header .topbar {
         min-height: 0;
         height: 0;
         overflow: hidden;
@@ -5857,7 +5857,7 @@ fieldset[disabled] .btn-more.focus {
     #header.header-fancy.sticky-header #navbar .nav>li>.search-form {
         padding-top: 17px;
         padding-bottom: 17px;
-    }
+    } */
 }
 
 @media (max-width: 1199px) {
@@ -5922,9 +5922,9 @@ fieldset[disabled] .btn-more.focus {
         max-height: 100px;
         overflow-y: scroll;
     }
-    body.keyboard-visible #header.sticky-header #navbar>ul.navbar-left {
+    /* body.keyboard-visible #header.sticky-header #navbar>ul.navbar-left {
         margin-top: 15px;
-    }
+    } */
 }
 
 

@@ -7,8 +7,8 @@
                 <!-- Content Area col-md-push-1 -->
                 <div id="content" class="col-md-8 col-md-push-1 sidebar-right">
                     <ul class="breadcrumbs breadcrumb">
-                        <li><a href="index.html">Beranda</a><span class="divider"></span></li>
-                        <li><a href="berita-lengkap.html">Rilis Berita</a><span class="divider"></span>
+                        <li><a href="{{url('/')}}">Beranda</a><span class="divider"></span></li>
+                        <li><a href="{{url('/berita')}}">Rilis Berita</a><span class="divider"></span>
                         </li>
                         <li class="active">{{$berita->title}}</li> <!Jdul berita>
                     </ul>
@@ -29,7 +29,7 @@
                                 <img src="{{env('APP_URL').'/fpik_web/storage/app/public/'.$berita->image}}" alt="#"> <!foto berita>
                             </figure>
                             <p><!Jdul berita></p>
-                            <p>{{$berita->description}}</p>
+                            <p>{!!$berita->description!!}</p>
                         </div>
                         <!-- Share -->
                         <ul class="share-box" id="yw1">

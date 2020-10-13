@@ -7,8 +7,8 @@
                 <!-- Content Area col-md-push-1 -->
                 <div id="content" class="col-md-8 col-md-push-1 sidebar-right">
                     <ul class="breadcrumbs breadcrumb">
-                        <li><a href="index.html">Beranda</a><span class="divider"></span></li>
-                        <li><a href="sdg14-fakultas.html">SDG-Fakultas</a><span class="divider"></span>
+                        <li><a href="{{url('/')}}">Beranda</a><span class="divider"></span></li>
+                        <li><a href="{{url('/sdg14-fakultas')}}">SDG-Fakultas</a><span class="divider"></span>
                         </li>
                         <li class="active">{{$sdg->title_sdg}}</li> <!Jdul sdg>
                     </ul>

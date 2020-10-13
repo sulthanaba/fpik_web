@@ -6,7 +6,7 @@
             <div class="row">
                 <div id="content" class="col-md-9 sidebar-right">
                     <ul class="breadcrumbs breadcrumb">
-                        <li><a href="index.html">Beranda</a><span class="divider"></span></li>
+                        <li><a href="{{url('/')}}">Beranda</a><span class="divider"></span></li>
                         <li class="active">SDG14 Fakultas Perikanan dan Ilmu Kelautan IPB</li>
                     </ul>
                     <!-- Content -->
@@ -15,7 +15,7 @@
                             <h1 class="post-title font-weight-bold text-center" style="color: #073C64;">Kegiatan SDG14 FPIK IPB</h1>
                             <ul class="entry-meta">
                                 <li class="post-view print_pdf">
-                                    <a rel="nofollow" class="print-pdf btn btn-secondary" title="SDG Fakultas" href="bahan/SDG14-Report-FPIK2019-29-09-20.pdf">
+                                    <a rel="nofollow" class="print-pdf btn btn-secondary" title="SDG Fakultas" href="{{asset('frontend/bahan/SDG14-Report-FPIK2019-29-09-20.pdf')}}">
                                         <i class="fa fa-file-pdf-o"></i> Sustainability Report 2019 | FPIK IPB </a>
                                 </li>
                             </ul>

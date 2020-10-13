@@ -15,7 +15,7 @@ class AgrianitaController extends AdminController
      *
      * @var string
      */
-    protected $title = 'SDG';
+    protected $title = 'Agrianita';
 
     /**
      * Make a grid builder.
@@ -73,7 +73,7 @@ class AgrianitaController extends AdminController
 
         $form->text('title_agrianita',('Judul'));
         $form->image('image_agrianita',('Gambar'));
-        $form->textarea('description_agrianita',('Deskripsi'));
+        $form->ckeditor('description_agrianita',('Deskripsi'));
 
         return $form;
     }

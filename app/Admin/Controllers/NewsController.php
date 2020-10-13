@@ -73,7 +73,7 @@ class NewsController extends AdminController
 
         $form->text('title','Judul');
         $form->image('image','Gambar');
-        $form->textarea('description','Deskripsi');
+        $form->ckeditor('description','Deskripsi');
         $form->text('source','Sumber');
 
         return $form;
