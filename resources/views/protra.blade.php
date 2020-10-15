@@ -1,4 +1,9 @@
 @extends('layout_master')
+
+@section('title')
+    Program Kerja Fakultas Perikanan dan Ilmu Kelautan IPB
+@endsection
+
 @section('content')
 
     <div id="body">

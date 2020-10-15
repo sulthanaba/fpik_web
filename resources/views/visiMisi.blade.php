@@ -1,4 +1,9 @@
 @extends('layout_master')
+
+@section('title')
+    Visi Misi Fakultas Perikanan dan Ilmu Kelautan IPB
+@endsection
+
 @section('content')
 
     <div id="body">

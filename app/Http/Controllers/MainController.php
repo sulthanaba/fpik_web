@@ -45,7 +45,7 @@ class MainController extends Controller
 
     public function berita(){
         $berita = DB::table('news')
-            ->get();
+            ->paginate(4);
 
         foreach($berita as $b){
             $b->created_at = date('d M Y', strtotime($b->created_at));
@@ -113,7 +113,7 @@ class MainController extends Controller
     }
 
     public function sdgFakultas(){
-        $sdg = DB::table('sdg')->get();
+        $sdg = DB::table('sdg')->paginate(4);
 
         foreach($sdg as $s){
             $s->created_at = date('M Y', strtotime($s->created_at));
@@ -143,7 +143,7 @@ class MainController extends Controller
 
     public function agrianita(){
         $agrianita = DB::table('agrianita')
-            ->get();
+            ->paginate(4);
 
         foreach($agrianita as $a){
             $a->created_at = date('d M Y', strtotime($a->created_at));
