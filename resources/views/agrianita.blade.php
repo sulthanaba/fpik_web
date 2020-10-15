@@ -43,8 +43,8 @@
                                                 <span class="post-date">{{$a->created_at}}</span> <!tanggal post>
                                             </p>
                                         </div>
-                                        <div class="entry-content">
-                                            <p>{{$a->description_agrianita}}</p> <!Isi agrianita>
+                                        <div class="entry-content" style="max-height: 100px;overflow: hidden;text-overflow: ellipsis;">
+                                            <p>{!!$a->description_agrianita!!}</p> <!Isi agrianita>
                                         </div>
                                     </div>
                                 </div>

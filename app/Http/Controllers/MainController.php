@@ -23,7 +23,10 @@ class MainController extends Controller
             ->whereNotIn('id', [$event->id])
             ->get();
 
-        $info = DB::table('informations')->get();
+        $info = DB::table('informations')
+            ->orderBy('id', 'DESC')
+            ->limit(4)
+            ->get();
 
         foreach($info as $i){
             $i->created_at = date('d F Y', strtotime($i->created_at));

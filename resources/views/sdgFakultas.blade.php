@@ -45,8 +45,8 @@
                                                     <span class="post-date">{{$s->created_at}}</span> <!tanggal post>
                                                 </p>
                                             </div>
-                                            <div class="entry-content">
-                                                <p>{{$s->description_sdg}}</p> <!Isi sdg>
+                                            <div class="entry-content" style="max-height: 100px;overflow: hidden;text-overflow: ellipsis;">
+                                                <p>{!!$s->description_sdg!!}</p> <!Isi sdg>
                                             </div>
                                         </div>
                                     </div>

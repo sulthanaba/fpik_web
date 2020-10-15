@@ -55,10 +55,8 @@
                                 <span class="post-date ">{{$berita_terkini->created_at}} </span> <!tanggal post>
                                 <h3><a href="{{ url('/berita-lengkap/'.$berita_terkini->id) }}">{{$berita_terkini->title}} </a></h3> <!Judul Berita>
                             </div>
-                            <div class="entry-content"> <!isi artikel>
-                                <p>{{$berita_terkini->description}}</p> 
-                                {{-- <p>&ldquo;Semua negara berlomba dalam melakukan riset dalam upaya mengendalikan meluasnya wabah Covid-19. Mulai dari melakukan penelitian untuk vaksin, obat hingga bagaimana upaya manusia agar tetap fit menjaga stamina
-                                tubuh. [...]</p> --}}
+                            <div class="entry-content" style="max-height: 100px;overflow: hidden;text-overflow: ellipsis;"> <!isi artikel>
+                                <p>{!!$berita_terkini->description!!}</p>
                             </div>
                             <a class="btn btn-more " href="{{ url('/berita-lengkap/'.$berita_terkini->id) }}">Baca selengkapnya</a>
                         </div>
@@ -151,11 +149,11 @@
                                                     if($extension == 'png' || $extension == 'jpeg' || $extension == 'jpg'){
                                                 ?>
 
-                                                    <img src="{{env('APP_URL').'/fpik_web/storage/app/public/'.$event->content}}" class="carousel-fill">
+                                                    <img src="{{env('APP_URL').'/fpik_web/storage/app/public/'.$event->content}}" onclick="eventClick(`{{$event->link}}`)" class="carousel-fill">
 
                                                 <?php }else{ ?>
 
-                                                    <video muted autoplay loop class="carousel-fill">
+                                                    <video muted autoplay loop class="carousel-fill" onclick="eventClick(`{{$event->link}}`)">
                                                         <source src="{{env('APP_URL').'/fpik_web/storage/app/public/'.$event->content}}" type="video/mp4">
                                                     </video>
 
@@ -172,11 +170,11 @@
                                                         if($extension == 'png' || $extension == 'jpeg' || $extension == 'jpg'){
                                                     ?>
 
-                                                        <img src="{{env('APP_URL').'/fpik_web/storage/app/public/'.$e2->content}}" class="carousel-fill">
+                                                        <img src="{{env('APP_URL').'/fpik_web/storage/app/public/'.$e2->content}}" onclick="eventClick(`{{$e2->link}}`)" class="carousel-fill">
 
                                                     <?php }else{ ?>
 
-                                                        <video muted autoplay loop class="carousel-fill">
+                                                        <video muted autoplay loop class="carousel-fill" onclick="eventClick(`{{$e2->link}}`)">
                                                             <source src="{{env('APP_URL').'/fpik_web/storage/app/public/'.$e2->content}}" type="video/mp4">
                                                         </video>
 
@@ -498,6 +496,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function eventClick($link) {
+            document.location.href = $link;
+        }
+    </script>
     
 @endsection
 
