@@ -53,16 +53,8 @@
 
                         @endforeach
 
-                        <div class="yii-pagination">
-                            Pergi ke halaman:
-                            <ul id="yw1" class="yiiPager">
-                                <li class="first hidden"><a href="#">&lt;&lt; Pertama</a></li>
-                                <!-- <li class="previous"><a href="#">&lt; Sebelumnya</a></li> -->
-                                <li class="page selected"><a href="berita-lengkap.html">1</a></li>
-                                <li class="page"><a href="#">2</a></li>
-                                <li class="next"><a href="#">Berikut &gt;</a></li>
-                                <li class="last"><a href="#">Terakhir &gt;&gt;</a></li>
-                            </ul>
+                        <div class="d-flex justify-content-center">
+                            {!! $agenda->links() !!}
                         </div>
                         <!-- Pagination -->
                     </div>

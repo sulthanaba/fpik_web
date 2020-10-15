@@ -1,4 +1,9 @@
 @extends('layout_master')
+
+@section('title')
+    {{$sdg->title_sdg}}
+@endsection
+
 @section('content')
 
     <div id="body">

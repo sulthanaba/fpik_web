@@ -32,7 +32,7 @@
     <!-- HEADER -->
     <header id="header" class=" header-fancy">
         <div class="navbar-header">
-            <a href="index.html" class="navbar-brand fixed">
+        <a href="{{url('/')}}" class="navbar-brand fixed">
                 <img src="{{ asset('frontend/photo/logo/logo_fpik_putih.png')}}" alt="Fakultas Perikanan" class="img-responsive">
                 <!-- <span>FPIK - IPB University</span> -->
             </a>
@@ -244,10 +244,10 @@
                                                             <a href="{{ url('/pekan-kreativitas-mahasiswa') }}" class="nav-link ">Program Kreativitas Mahasiswa</a>
                                                         </li>
                                                         <li class="nav-item ">
-                                                            <a href="{{ url('/pekan-kreativitas-mahasiswa') }}" class="nav-link ">Daftar Kegiatan Mahasiswa</a>
+                                                            <a href="{{ url('/daftar-kegiatan-mahasiswa') }}" class="nav-link ">Daftar Kegiatan Mahasiswa</a>
                                                         </li>
                                                         <li class="nav-item ">
-                                                            <a href="{{ url('/pekan-kreativitas-mahasiswa') }}" class="nav-link ">Daftar Prestasi Mahasiswa</a>
+                                                            <a href="{{ url('/daftar-prestasi-mahasiswa') }}" class="nav-link ">Daftar Prestasi Mahasiswa</a>
                                                         </li>
                                                     </ul>
                                                 </div>

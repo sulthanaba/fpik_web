@@ -1,4 +1,9 @@
 @extends('layout_master')
+
+@section('title')
+    {{$agrianita->title_agrianita}}
+@endsection
+
 @section('content')
 
 <div id="body">

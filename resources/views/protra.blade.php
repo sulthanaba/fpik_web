@@ -113,41 +113,40 @@
                         <!-- <p>Tidak ada info terbaru saat ini</p> -->
                         <ul class="post-list">
                             <li>
-                                <a href="sejarah.html" title="sejarah FPIK IPB">Sejarah FPIK IPB</a>
+                                <a href="{{url('/sejarah')}}" title="sejarah FPIK IPB">Sejarah FPIK IPB</a>
                                 <!-- <div class="entry-meta">
-                                                    <span class="meta-date">05 November 2019</span>
-                                                </div> -->
+                                    <span class="meta-date">05 November 2019</span>
+                                </div> -->
                             </li>
                             <li>
-                                <a href="struktur.html" title="struktur FPIK IPB">Struktur FPIK IPB</a>
+                                <a href="{{url('/struktur')}}" title="struktur FPIK IPB">Struktur FPIK IPB</a>
                                 <!-- <div class="entry-meta">
-                                                    <span class="meta-date">05 November 2019</span>
-                                                </div> -->
+                                    <span class="meta-date">05 November 2019</span>
+                                </div> -->
                             </li>
                             <li>
-                                <a href="visi-misi.html" title="visi-misi FPIK IPB">Visi & Misi FPIK IPB</a>
+                                <a href="{{url('/visi-misi')}}" title="visi-misi FPIK IPB">Visi & Misi FPIK IPB</a>
                                 <!-- <div class="entry-meta">
-                                                        <span class="meta-date">05 November 2019</span>
-                                                </div> -->
+                                        <span class="meta-date">05 November 2019</span>
+                                </div> -->
                             </li>
                             <li>
-                                <a href="pimpinan.html" title="pimpinan FPIK IPB">Pimpinan FPIK IPB</a>
+                                <a href="{{url('/pimpinan')}}" title="pimpinan FPIK IPB">Pimpinan FPIK IPB</a>
                                 <!-- <div class="entry-meta">
-                                                                                <span class="meta-date">05 November 2019</span>
-                                                                            </div> -->
+                                                                <span class="meta-date">05 November 2019</span>
+                                                            </div> -->
                             </li>
                             <li>
-                                <a href="proker-restra.html" title="proker-restra FPIK IPB">Program kerja & restra FPIK
-                                    IPB</a>
+                                <a href="{{url('/proker-restra')}}" title="proker-restra FPIK IPB">Program kerja & restra FPIK IPB</a>
                                 <!-- <div class="entry-meta">
-                                                                                <span class="meta-date">05 November 2019</span>
-                                                                            </div> -->
+                                                                <span class="meta-date">05 November 2019</span>
+                                                            </div> -->
                             </li>
                             <li>
-                                <a href="senat.html" title="senat FPIK IPB">Senat FPIK IPB</a>
+                                <a href="{{url('/senat')}}" title="senat FPIK IPB">Senat FPIK IPB</a>
                                 <!-- <div class="entry-meta">
-                                                                                <span class="meta-date">05 November 2019</span>
-                                                                            </div> -->
+                                                                <span class="meta-date">05 November 2019</span>
+                                                            </div> -->
                             </li>
                         </ul>
                     </div>

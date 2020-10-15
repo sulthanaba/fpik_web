@@ -1,4 +1,9 @@
 @extends('layout_master')
+
+@section('title')
+    {{$berita->title}}
+@endsection
+
 @section('content')
 
     <div id="body">

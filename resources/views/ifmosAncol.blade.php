@@ -1,7 +1,7 @@
 @extends('layout_master')
 
 @section('title')
-    IFMOS Pelabuhanratu Fakultas Perikanan dan Ilmu Kelautan IPB
+    IFMOS Ancol Fakultas Perikanan dan Ilmu Kelautan IPB
 @endsection
 
 @section('content')

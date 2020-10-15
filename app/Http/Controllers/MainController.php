@@ -93,7 +93,7 @@ class MainController extends Controller
     }   
 
     public function agenda(){
-        $agenda = DB::table('agenda')->get();
+        $agenda = DB::table('agenda')->paginate(4);
 
         foreach($agenda as $a){
             $a->date_agenda = date('d M Y', strtotime($a->date_agenda));
