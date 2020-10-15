@@ -34,8 +34,8 @@
                                                 <span class="post-date">{{$b->created_at}}</span> <!Tanggal berita>
                                             </p>
                                         </div>
-                                        <div class="entry-content">
-                                            <p>{{$b->description}}</p>
+                                        <div class="entry-content" style="max-height: 100px;overflow: hidden;text-overflow: ellipsis;">
+                                            <p>{!!$b->description!!}</p>
                                         </div> <!Isi Berita>
                                     </div>
                                 </div>
