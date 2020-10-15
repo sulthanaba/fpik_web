@@ -1,4 +1,9 @@
 @extends('layout_master')
+
+@section('title')
+    IFMOS Ancol Fakultas Perikanan dan Ilmu Kelautan IPB
+@endsection
+
 @section('content')
 
     <div id="body">

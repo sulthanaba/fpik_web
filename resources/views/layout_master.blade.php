@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fakultas Perikanan dan Ilmu Kelautan</title>
+    <title>
+        @yield('title')
+    </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.css">
     <link rel="stylesheet" href="{{ asset('frontend/css/above-the-fold-2.css')}}">

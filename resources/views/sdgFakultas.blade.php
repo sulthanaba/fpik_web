@@ -1,4 +1,9 @@
 @extends('layout_master')
+
+@section('title')
+    SDG Fakultas Perikanan dan Ilmu Kelautan IPB
+@endsection
+
 @section('content')
 
     <div id="body">
@@ -53,6 +58,11 @@
                                 </article>
                             
                             @endforeach
+                            
+                            <div class="d-flex justify-content-center">
+                                {!! $sdg->links() !!}
+                            </div>
+                            <!-- Pagination -->
 
                         </div>
                     </article>

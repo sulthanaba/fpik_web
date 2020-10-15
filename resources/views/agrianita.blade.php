@@ -1,4 +1,9 @@
 @extends('layout_master')
+
+@section('title')
+    Agrianita Fakultas Perikanan dan Ilmu Kelautan IPB
+@endsection
+
 @section('content')
 
     <div id="body">
@@ -50,108 +55,10 @@
                                 </div>
                             </article>
                             @endforeach
-                            {{-- <article class="post">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 post-img">
-                                        <a href="agrianita-1.html">
-                                            <!link agrianita>
-                                                <img src="{{asset('frontend/photo/agrianita/Picture1.jpg')}}" alt="#">
-                                                <!Foto agrianita>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 post-content">
-                                        <div class="post-title">
-                                            <h3>
-                                                <a title="MUSHOLA BERSIH FPIK" href="agrianita-1.html">MUSHOLA BERSIH FPIK
-                                                </a>
-                                                <!link dan judul agrianita>
-                                            </h3>
-                                            <p class="post-meta">
-                                                <!-- <a href="../arsip/liputan-berita.html" class="post-category">Liputan/Berita</a> -->
-                                                <span class="post-date">Okt 2019</span>
-                                                <!tanggal post>
-                                            </p>
-                                        </div>
-                                        <div class="entry-content">
-                                            <p>Program Mushola Bersih FPIK berawal dari keinginan Ibu Ibu Agrianita FPIK untuk bisa berbuat sesuatu
-                                                yang nyata dan
-                                                bermanfaat serta dibutuhkan oleh civitas akademika FPIK dalam hal pemeliharaan dan membuat mushola
-                                                mushola yang sudah
-                                                ada di lingkungan FPIK menjadi mushola yang bersih dan nyaman untuk digunakan dalam kegiatan
-                                                ibadah....</p>
-                                            <!Isi agrianita>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="post">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 post-img">
-                                        <a href="agrianita-1.html">
-                                            <!link agrianita>
-                                                <img src="{{asset('frontend/photo/agrianita/Picture1.jpg')}}" alt="#">
-                                                <!Foto agrianita>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 post-content">
-                                        <div class="post-title">
-                                            <h3>
-                                                <a title="MUSHOLA BERSIH FPIK" href="agrianita-1.html">MUSHOLA BERSIH FPIK
-                                                </a>
-                                                <!link dan judul agrianita>
-                                            </h3>
-                                            <p class="post-meta">
-                                                <!-- <a href="../arsip/liputan-berita.html" class="post-category">Liputan/Berita</a> -->
-                                                <span class="post-date">Okt 2019</span>
-                                                <!tanggal post>
-                                            </p>
-                                        </div>
-                                        <div class="entry-content">
-                                            <p>Program Mushola Bersih FPIK berawal dari keinginan Ibu Ibu Agrianita FPIK untuk bisa berbuat sesuatu
-                                                yang nyata dan
-                                                bermanfaat serta dibutuhkan oleh civitas akademika FPIK dalam hal pemeliharaan dan membuat mushola
-                                                mushola yang sudah
-                                                ada di lingkungan FPIK menjadi mushola yang bersih dan nyaman untuk digunakan dalam kegiatan
-                                                ibadah....</p>
-                                            <!Isi agrianita>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="post">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 post-img">
-                                        <a href="agrianita-1.html">
-                                            <!link agrianita>
-                                                <img src="{{asset('frontend/photo/agrianita/Picture1.jpg')}}" alt="#">
-                                                <!Foto agrianita>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 post-content">
-                                        <div class="post-title">
-                                            <h3>
-                                                <a title="MUSHOLA BERSIH FPIK" href="agrianita-1.html">MUSHOLA BERSIH FPIK
-                                                </a>
-                                                <!link dan judul agrianita>
-                                            </h3>
-                                            <p class="post-meta">
-                                                <!-- <a href="../arsip/liputan-berita.html" class="post-category">Liputan/Berita</a> -->
-                                                <span class="post-date">Okt 2019</span>
-                                                <!tanggal post>
-                                            </p>
-                                        </div>
-                                        <div class="entry-content">
-                                            <p>Program Mushola Bersih FPIK berawal dari keinginan Ibu Ibu Agrianita FPIK untuk bisa berbuat sesuatu
-                                                yang nyata dan
-                                                bermanfaat serta dibutuhkan oleh civitas akademika FPIK dalam hal pemeliharaan dan membuat mushola
-                                                mushola yang sudah
-                                                ada di lingkungan FPIK menjadi mushola yang bersih dan nyaman untuk digunakan dalam kegiatan
-                                                ibadah....</p>
-                                            <!Isi agrianita>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article> --}}
+                            <div class="d-flex justify-content-center">
+                                {!! $agrianita->links() !!}
+                            </div>
+                            <!-- Pagination -->
                         </div>
                     </article>
                     <!-- / Content -->
