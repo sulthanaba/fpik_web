@@ -62,15 +62,15 @@
                 <div class="col-md-1 col-md-pull-8 share-box-wrapper">
                     <ul class="share-box" id="#">
                         <li>
-                            <a class="facebook" title="Facebook" target="_blank" href="http://www.facebook.com/">
+                            <a class="facebook" title="Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{urlencode(config('app.url').'/agenda')}}">
                                 <i class="fa fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a class="twitter" title="Twitter" target="_blank" href="http://twitter.com/">
-                                <i class="fa fa-twitter"></i></a>
+                            <a class="twitter" title="Twitter" target="_blank" href="https://twitter.com/intent/tweet?text=my share text&amp;url={{config('app.url').'/agenda'}}"><i
+                                    class="fa fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a class="whatsapp" title="WHATSAPP" target="_blank" href="https://wa.me/">
+                            <a class="whatsapp" title="WHATSAPP" target="_blank" href="https://wa.me/?text={{config('app.url').'/agenda'}}">
                                 <i class="fa fa-whatsapp"></i></a>
                         </li>
                     </ul>
