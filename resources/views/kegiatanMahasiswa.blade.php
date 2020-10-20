@@ -12,7 +12,6 @@
                 <div id="content" class="col-md-9 sidebar-right">
                     <ul class="breadcrumbs breadcrumb">
                         <li><a href="{{url('/')}}">Beranda</a><span class="divider"></span></li>
-
                         <li class="active">Daftar Kegiatan Kemahasiswaan</li>
                     </ul>
                     <!-- Content -->
