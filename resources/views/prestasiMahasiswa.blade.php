@@ -11,7 +11,7 @@
             <div class="row">
                 <div id="content" class="col-md-9 sidebar-right">
                     <ul class="breadcrumbs breadcrumb">
-                        <li><a href="index.html">Beranda</a><span class="divider"></span></li>
+                        <li><a href="{{url('/')}}">Beranda</a><span class="divider"></span></li>
                         <li class="active">Daftar Prestasi Mahasiswa FPIK IPB</li>
                     </ul>
                     <!-- Content -->

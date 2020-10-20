@@ -11,7 +11,7 @@
             <div class="row">
                 <div id="content" class="col-md-9 sidebar-right">
                     <ul class="breadcrumbs breadcrumb">
-                        <li><a href="index.html">Beranda</a><span class="divider"></span></li>
+                        <li><a href="{{url('/')}}">Beranda</a><span class="divider"></span></li>
 
                         <li class="active">Daftar Kegiatan Kemahasiswaan</li>
                     </ul>
@@ -44,15 +44,15 @@
                         </div>
                         <ul class="share-box" id="yw1">
                             <li>
-                                <a class="facebook" title="Facebook" target="_blank" href="http://www.facebook.com/">
+                                <a class="facebook" title="Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{urlencode(config('app.url').'/daftar-kegiatan-mahasiswa')}}">
                                     <i class="fa fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a class="twitter" title="Twitter" target="_blank" href="http://twitter.com/"><i
+                                <a class="twitter" title="Twitter" target="_blank" href="https://twitter.com/intent/tweet?text=my share text&amp;url={{config('app.url').'/daftar-kegiatan-mahasiswa'}}"><i
                                         class="fa fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a class="whatsapp" title="WHATSAPP" target="_blank" href="https://wa.me/">
+                                <a class="whatsapp" title="WHATSAPP" target="_blank" href="https://wa.me/?text={{config('app.url').'/daftar-kegiatan-mahasiswa'}}">
                                     <i class="fa fa-whatsapp"></i></a>
                             </li>
                         </ul>
