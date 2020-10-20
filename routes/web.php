@@ -61,7 +61,7 @@ Route::get('/agenda', 'MainController@agenda');
 
 Route::get('/berita', 'MainController@berita');
 
-Route::get('/berita-lengkap/{id}', 'MainController@beritaLengkap');
+Route::get('/berita-lengkap/{id}', 'MainController@beritaLengkap')->name('berita.detail');
 
 Route::get('/statistik', function () {
     return view('statistik');

@@ -423,7 +423,6 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" defer src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
     <script type="text/javascript" defer src="{{asset('frontend/js/slick.min.js')}}"></script>
@@ -431,6 +430,7 @@
     <script type="text/javascript" defer src="{{asset('frontend/js/jquery.nav.js')}}"></script>
     <script type="text/javascript" defer src="{{asset('frontend/js/jquery.matchHeight-min.js')}}"></script>
     <script type="text/javascript" defer src="{{asset('frontend/js/apps.min.js')}}"></script>
+    <script src="{{ asset('js/share.js') }}"></script>
     <!-- Asynchronous CSS & Font -->
     <noscript id="deferred-styles">
         <link rel="stylesheet"

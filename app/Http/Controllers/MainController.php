@@ -89,7 +89,9 @@ class MainController extends Controller
             $b3->created_at = date('d F Y H:i', strtotime($b3->created_at));
         }
 
-        return view('beritaLengkap', compact('berita', 'berita2', 'berita3'));
+        $link = config('app.url').'/berita-lengkap/'.$request->id;
+
+        return view('beritaLengkap', compact('berita', 'berita2', 'berita3', 'link'));
     }   
 
     public function agenda(){
@@ -138,7 +140,9 @@ class MainController extends Controller
             $s->created_at = date('d F Y H:i', strtotime($s->created_at));
         }
 
-        return view('sdgFakultasLengkap', compact('sdg', 'sdg2'));
+        $link = config('app.url').'/sdg14-lengkap/'.$request->id;
+
+        return view('sdgFakultasLengkap', compact('sdg', 'sdg2', 'link'));
     }
 
     public function agrianita(){
@@ -177,6 +181,8 @@ class MainController extends Controller
             $a2->created_at = date('d M Y', strtotime($a2->created_at));
         }
 
+        $link = config('app.url').'/agrianita-lengkap/'.$request->id;
+
         // $agrianita3 = DB::table('agrianita')
         //     ->whereNotIn('id', [$agrianita->id])
         //     ->limit(2)
@@ -186,7 +192,7 @@ class MainController extends Controller
         //     $a3->created_at = date('d F Y H:i', strtotime($a3->created_at));
         // }
 
-        return view('agrianitaLengkap', compact('agrianita', 'agrianita2'));
+        return view('agrianitaLengkap', compact('agrianita', 'agrianita2', 'link'));
     }
     
     public function achievement() {
